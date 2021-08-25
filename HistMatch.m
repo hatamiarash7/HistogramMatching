@@ -47,7 +47,7 @@ for Channel = 1:3
     result = zeros(size(I_(:)));
     
     for k = 1:size(F, 1)
-        indecies = find(I_==k-1);
+        indecies = I_==k-1;
         result(indecies) = F(k, 1);
     end
     
